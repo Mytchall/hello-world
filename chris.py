@@ -6,7 +6,7 @@ import random
 
 client = discord.Client()
 
-def background_loop():
+async def background_loop():
     await client.wait_until_ready()
     while not client.is_closed:
         channel = client.get_channel("260599782676889602")
